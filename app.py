@@ -18,5 +18,7 @@ def generate():
     story = tokenizer.decode(outputs[0], skip_special_tokens=True)
     return jsonify({'story': story})
 
-if __name__ == '__main__':
+# For Vercel
+if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
+
