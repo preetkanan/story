@@ -28,7 +28,7 @@ jobs:
 
       - name: Deploy to Render
         env:
-          RENDER_API_KEY: ${{secrets.RENDER_API_KEY}}
+          RENDER_API_KEY: ${{rnd_UPdHODcOVoQKu1cRPoLTDJJclV6M}}
         run: |
           curl -s --request POST \
           --url https://api.render.com/v1/services/YOUR_SERVICE_ID/deploys \
